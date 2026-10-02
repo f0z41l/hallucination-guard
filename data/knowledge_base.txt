@@ -1,0 +1,29 @@
+France is a country in Western Europe. The capital of France is Paris.
+
+The Eiffel Tower is located in Paris, France. It was completed in 1889.
+
+The Earth is the third planet from the Sun. It is the only astronomical object currently known to support life.
+
+Python is a high-level, general-purpose programming language. It was created by Guido van Rossum and first released in 1991.
+
+The Pacific Ocean is the largest and deepest ocean on Earth.
+
+Mount Everest is the highest mountain above sea level. It is located in the Himalayas.
+
+The Sun is a star at the center of the Solar System. Earth and other planets orbit the Sun.
+
+Water is composed of hydrogen and oxygen. Its chemical formula is H2O.
+
+The human heart is a muscular organ that pumps blood throughout the body.
+
+The Moon is Earth's natural satellite and orbits Earth.
+
+The Amazon River is one of the world's largest rivers by water discharge.
+
+The Sahara is the largest hot desert in the world and is located in North Africa.
+
+Java is a high-level, object-oriented programming language developed by Sun Microsystems.
+
+The CPU is a central component of a computer that executes instructions and performs calculations.
+
+HTML is a markup language used to structure content on web pages.

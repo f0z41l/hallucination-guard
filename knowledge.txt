@@ -1,0 +1,61 @@
+Current progress
+Component	Status
+Python/Ollama setup	✅
+LLM generation	✅
+Knowledge base	✅
+FAISS retrieval	✅
+Semantic similarity	✅
+NLI verification	✅
+Confidence-score logic	✅ step 9 
+Combine everything into one pipeline ✅  step 10
+Streamlit UI	
+Testing dataset	
+Experiments	
+Metrics/results	
+Final analysis	
+Research paper	
+Presentation/demo   
+
+Create a Python virtual environment: python -m venv venv
+Activate it: .\venv\Scripts\Activate.ps1       <---------------------- need to run first every day when vs code is being opend 
+Now run: ollama list
+ollama pull llama3.2:3b
+Then test it directly: ollama run llama3.2:3b
+Ask it: What is the capital of France?
+If it answers, type: /bye
+
+Step 4 — Connect Python → Ollama  code into app.py til line number 18
+Step 5 — Create the knowledge base inside knowledge_base.txt
+
+Step 6 — Install the retrieval libraries  Run: pip install sentence-transformers faiss-cpu
+This gives us:
+Sentence Transformers → converts text into numerical embeddings.
+FAISS → searches those embeddings for the most relevant evidence.
+
+After installation, run:
+pip show sentence-transformers
+pip show faiss-cpu
+
+Step 6 — Create retriever.py code in this till line no 62 
+Step 7 — Calculate semantic similarity code in this till line no 36
+Step 8 — Install the NLI dependencies Run: pip install transformers torch
+
+Step 9 — Create nli.py
+
+Step 10 — Test SUPPORT
+Run:python nli.py
+Enter:The capital of France is Paris.
+
+Step 9 — Build the Confidence Score
+Now we need to combine:
+Semantic similarity
+NLI result
+
+Step 10 — Create pipeline.py
+we'll integrate everything into one end-to-end pipeline.
+
+
+Step 12 — Expand knowledge_base.txt
+
+Replace your current data/knowledge_base.txt with:
+
