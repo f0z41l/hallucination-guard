@@ -1,33 +1,40 @@
 def calculate_confidence(similarity, nli_label, nli_score):
 
-    # Convert similarity from 0–1 to percentage
     similarity_score = similarity * 100
 
+    # Evidence supports the answer
     if nli_label == "entailment":
+
         confidence = (
             0.5 * similarity_score +
             0.5 * (nli_score * 100)
         )
 
+        if confidence >= 85:
+            status = "Verified"
+        else:
+            status = "Low Confidence"
+
+    # Evidence contradicts the answer
     elif nli_label == "contradiction":
+
         confidence = (
             0.5 * similarity_score -
             0.5 * (nli_score * 100)
         )
 
+        confidence = max(0, confidence)
+
+        status = "Possible Hallucination"
+
+    # Evidence is insufficient to verify the answer
     else:  # neutral
+
         confidence = 0.5 * similarity_score
 
-    # Keep score between 0 and 100
-    confidence = max(0, min(100, confidence))
-
-    # Verification status
-    if confidence >= 85:
-        status = "Verified"
-    elif confidence >= 60:
         status = "Low Confidence"
-    else:
-        status = "Possible Hallucination"
+
+    confidence = max(0, min(100, confidence))
 
     return confidence, status
 
