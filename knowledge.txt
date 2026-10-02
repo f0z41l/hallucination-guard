@@ -57,5 +57,12 @@ we'll integrate everything into one end-to-end pipeline.
 
 Step 12 — Expand knowledge_base.txt
 
-Replace your current data/knowledge_base.txt with:
+Replace your current data/knowledge_base.txt with: extra materials
+
+Step 1 — Install Streamlit
+In your activated project terminal:
+pip install streamlit
+Check:
+streamlit --version
+Step 2 — Replace app.py
 
